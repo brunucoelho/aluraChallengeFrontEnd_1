@@ -9,38 +9,84 @@
   <!-- CABEÇALHO -->
   <header class="cabecalho-main">
     <div class="cabecalho">
-    <img
+      <img
       class="cabecalho-imagem-logo"
       src="./assets/logo-plataforma.png"
       alt="Logo ALURA DEV"
-    />
-    <input class="cabecalho-busca" type="text" placeholder="Busque por algo" />
-    <div class="cabecalho-login">
-      <img
-        class="cabecalho-imagem-perfil"
-        src="./assets/_LoginBruno.png"
-        alt="Foto perfil"
       />
-      <p class="cabecalho-nome-perfil">Bruno</p>
+      <div class="cabecalho-input-e-login">
+      <input class="cabecalho-busca input-padrao" type="text" placeholder="Busque por algo" />
+      <div class="cabecalho-login">
+        <img
+          class="cabecalho-imagem-perfil"
+          src="./assets/_LoginBruno.png"
+          alt="Foto perfil"
+        />
+        <p class="cabecalho-nome-perfil">Bruno</p>
+      </div>
     </div>
     </div>
   </header>
 
-  <!-- MENU NAVEGAÇÃO -->
   <body>
-    <section class="menu-navegacao">
-      <p class="navegacao-title">MENU</p>
-      <a class="navegacao-link" href="">
-        <img class="navegacao-icon" src="./assets/icon_edit_code.png" alt="" />
-        <p class="navegacao-texto pg1">Editor de código</p></a
-      >
-      <div class="navegacao-link">
-      <a class="navegacao-link" href="">
-        <img class="navegacao-icon" src="./assets/icon_people.png" alt="" />
-        <p class="navegacao-texto pg2">Comunidade</p></a
-      >
-    </section>
-    <section></section>
-    <section></section>
+    <div class="container">
+      <!-- MENU NAVEGAÇÃO -->
+      <section class="menu-navegacao">
+        <p class="title">MENU</p>
+        <a class="navegacao-link" href="">
+          <img class="navegacao-icon" src="./assets/icon_edit_code.png" alt="" />
+          <p class="navegacao-texto pg1">Editor de código</p></a
+        >
+        <div class="navegacao-link">
+        <a class="navegacao-link" href="">
+          <img class="navegacao-icon" src="./assets/icon_people.png" alt="" />
+          <p class="navegacao-texto pg2">Comunidade</p></a
+        >
+      </section>
+      <div class="container-0">
+        <!-- MENU EDITOR DE CÓDIGO -->
+        <section class="menu-editor-cod">
+          <div class="painel-editordecpdigo-cor">
+            <div class="painel-editordecodigo">
+              <img src="./assets/mac_buttons.svg" alt="Botões mac">
+               <textarea name="editorCodigo" id="editordecodigo" cols="30" rows="10" class="area-editordecodigo" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+      
+                const unfold = (f, seed) => {
+                    const go = (f, seed, acc) => {
+                      const res = f(seed)
+                      return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                    }
+                    return go(f, seed, [])
+                }"></textarea>
+            </div>
+          </div>
+          <button class="botao-editordecodigo input-padrao">Visualizar com o highlight</button>
+        </section>
+        <!-- MENU LATERAL -->
+        <section class="menu-lateral-main">
+          <div class="lateral-element1">
+            <div class="lateral-element2">
+              <p class="title">SEU PROJETO</p>
+              <input class="lateral-projeto input-padrao" type="text" placeholder="Nome do seu projeto">
+              <textarea name="descricaoDoProjeto" id="descricaoProjeto" cols="30" rows="10" placeholder="Descrição do seu projeto" class="lateral-descricao-projeto input-padrao"></textarea>
+            </div>
+            <div class="lateral-element2">
+              <p class="title">PERSONALIZAÇÃO</p>
+              <select class="lateral-projeto input-padrao" name="linguagem" id="escolher-linguagem">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Ruby">Ruby</option>
+                <option value="PHP">PHP</option>
+              </select>
+              <input class="lateral-cor" type="color" value="#6BD1FF">
+            </div>
+          </div>
+          <button class="menu-lateral-button lateral-projeto">Salvar projeto
+          </button>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
