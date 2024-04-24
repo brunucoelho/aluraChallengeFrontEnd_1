@@ -135,6 +135,13 @@
   }
 }
 
+.preview {
+  outline: none;
+  font-family: var(--font_two);
+  background-color: black;
+  font-size: 1rem;
+}
+
 .area-editordecodigo {
   width: 41rem;
   height: 14.625rem;
@@ -161,6 +168,10 @@
   font-size: 1rem;
   color: var(--color_font_primary);
   cursor: pointer;
+
+  &:hover {
+    opacity: 65%;
+  }
 }
 
 /* Menu navegação */
@@ -191,6 +202,10 @@
   gap: 1rem;
   align-items: center;
   text-decoration: none;
+
+  &:hover {
+    opacity: 80%;
+  }
 }
 
 .navegacao-icon {
@@ -226,6 +241,10 @@
   width: 17rem;
   height: 3.5rem;
   font-size: 1rem;
+
+  &:hover {
+    opacity: 80%;
+  }
 }
 
 .lateral-descricao-projeto {
@@ -262,4 +281,8 @@
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 80%;
+  }
 }

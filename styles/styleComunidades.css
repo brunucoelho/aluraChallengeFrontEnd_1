@@ -10,6 +10,11 @@
   --color_fouth: rgba(0, 0, 0, 0.16);
   --color_font_primary: #ffffff;
   --color_font_primary_opaca: rgba(255, 255, 255, 0.64);
+
+  --color_painel_one: #9aff6b;
+  --color_painel_two: #6b83ff;
+  --color_painel_three: #ffc46b;
+  --color_painel_four: #ff6bcd;
 }
 
 /* Global */
@@ -121,8 +126,23 @@ html {
   border-radius: 0.5rem;
 }
 
-.painel-editordecpdigo-cor {
-  background-color: var(--color_terciary);
+.cor-1 {
+  background-color: var(--color_painel_one);
+}
+
+.cor-2 {
+  background-color: var(--color_painel_two);
+}
+
+.cor-3 {
+  background-color: var(--color_painel_three);
+}
+
+.cor-4 {
+  background-color: var(--color_painel_four);
+}
+
+.painel-editordecodigo-cor {
   padding: 1.5rem;
   width: 29.5rem;
   border-radius: 0.5rem;
